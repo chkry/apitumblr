@@ -9,7 +9,7 @@ function getJSONData() {
     $.getJSON(tumblrAPI, {
         api_key: 'ivofJBCOeNzCg3quY2l7PxnMm0w1bCQb7e3X84erImRG9stL1X'
         , tags: "chkry",
-        limit:10
+        limit:20
     }, successFn);
 
 }
@@ -82,3 +82,13 @@ function successFn1(result) {
 //                    }
             });
     }
+
+
+
+//Toggle Class  Pending
+
+$("#twitter").onmouseover().toggleClass(".bgt")
+
+$("#twitter").onM(function(){
+    $(".bg").toggleClass(".bgt");
+});
