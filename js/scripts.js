@@ -87,8 +87,13 @@ function successFn1(result) {
 
 //Toggle Class  Pending
 
-$("#twitter").onmouseover().toggleClass(".bgt")
 
-$("#twitter").onM(function(){
-    $(".bg").toggleClass(".bgt");
+$("#tumblrQuote").mouseover(function(){
+    $("body").toggleClass("bg",false);
+    $("body").toggleClass("bgt",true);
+});
+
+$("#tumblrQuote").mouseout(function(){
+    $("body").toggleClass("bgt",false);
+    $("body").toggleClass("bg",true);
 });
